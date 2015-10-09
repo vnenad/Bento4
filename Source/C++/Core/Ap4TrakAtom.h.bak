@@ -78,7 +78,7 @@ class AP4_TrakAtom : public AP4_ContainerAtom
     const AP4_TkhdAtom* GetTkhdAtom() const { return m_TkhdAtom; }
     AP4_TkhdAtom* UseTkhdAtom() { return m_TkhdAtom; }
 	// need MovieAtom outside Bento4
-	const AP4_MdhdAtom* GetMdhdAtom() const { return m_MdhdAtom; }
+	const AP4_MdhdAtom* GetMdhdAtom() { return m_MdhdAtom; }
 	AP4_MdhdAtom* UseMdhdAtom() { return m_MdhdAtom; }
     AP4_Result AdjustChunkOffsets(AP4_SI64 delta);
     AP4_Result GetChunkOffsets(AP4_Array<AP4_UI64>& chunk_offsets);
